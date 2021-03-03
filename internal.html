@@ -7,10 +7,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- VERY IMPORTANT for SEO and web positioning -->
-  <meta name="description" content="#"> <!-- Add webpage description -->
-  <meta name="keywords" content="#"> <!-- Add keywords -->
-  <meta name="Autor" content="#"> <!-- Add name of the webpage author -->
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <meta name="Autor" content="Emiliano Bergues">
   <meta name="robots" content="noindex, nofollow">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="styles/style.css" />
@@ -19,44 +18,49 @@
 
 <body>
 
-  <header class="header">
+  <header>
+
+  <div class="header">
 
     <ul id="topnav">
       <li><a href="https://confluence.cells.es/display/COM/Internal+Newsletter" rel="noopener noreferrer" target="_blank">Previous newsletters</a></li>
       <li><a href="#">Issue 29 -<time datetime="2019-12-15">December 2020</time></a></li>
-      <li><a href="https://www.albasynchrotron.es/en/" title="To ALBA Synchrotron webpage"><span class="color">ALBA Synchrotron</span> Internal Newsletter</a></li>
+      <li><a href="https://www.albasynchrotron.es/en/" title="To ALBA Synchrotron webpage" rel="noopener noreferrer" target="_blank"><span class="color">ALBA Synchrotron</span></a></li>
     </ul>
 
-    <figure class="logo">
-      <a href="https://www.albasynchrotron.es/en/" rel="noopener noreferrer" target="_blank"><img src="styles/images/logo.png" alt="Alba Synchrotron logo">
+    <figure>
+      <a href="https://www.albasynchrotron.es/en/" rel="noopener noreferrer" target="_blank"><img src="styles/images/LOGO.png" alt="Alba Synchrotron logo"  class="logo1">
       </a>
     </figure>
-
-
+    <div class="item3">
+    </div>
     <!--navbar start-->
     <nav id="menu">
-      <ul>
+      <input type="checkbox" id="drop"/>
+      <label id="hamburguesa" for="drop"> ☰ Menú</label>
+
+      <ul id="menu_list">
         <li><a href="#latestnews">Latest news</a></li>
         <li><a href="#sciencehighlights">Science Highlights</a></li>
         <li><a href="#industryandprojects">Industry and Projects</a></li>
         <li><a href="#people">People</a></li>
         <li><a href="#management">Management</a></li>
-        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#events">Agenda</a></li>
       </ul>
     </nav>
 
     <!--RRSS-->
 
-    <ul id="rrss">
-      <li><a href="https://twitter.com/ALBAsynchrotron" title="Página de Twitter" id="twitter"><span class="sr-only">Twitter</span></a></li>
-      <li><a href="https://www.instagram.com/alba_synchrotron/" title="Página de Instagram" id="instagram"> <span class="sr-only">Instagram</span></a></li>
-      <li><a href="https://www.linkedin.com/company/albasynchrotron/" title="Página de LinkedIn" id="linkedin"> <span class="sr-only">LinkedIn</span></a></li>
-      <li><a href="https://www.facebook.com/albasynchrotron/" title="Página de Facebook" id="facebook"><span class="sr-only">Facebook</span></a></li>
-      <li><a href="https://www.youtube.com/c/ALBASynchrotron" title="Página de Youtube" id="youtube"><span class="sr-only">Youtube</span></a></li>
-      <li><a href="https://www.flickr.com/photos/albasynchrotron" title="Página de Flickr" id="flickr"><span class="sr-only">Flickr</span></a></li>
+    <ul class="rrss">
+      <li><a href="https://twitter.com/ALBAsynchrotron" title="Página de Twitter" class="twitter"><span class="sr-only">Twitter</span></a></li>
+      <li><a href="https://www.instagram.com/alba_synchrotron/" title="Página de Instagram" class="instagram"> <span class="sr-only">Instagram</span></a></li>
+      <li><a href="https://www.linkedin.com/company/albasynchrotron/" title="Página de LinkedIn" class="linkedin"> <span class="sr-only">LinkedIn</span></a></li>
+      <li><a href="https://www.facebook.com/albasynchrotron/" title="Página de Facebook" class="facebook"><span class="sr-only">Facebook</span></a></li>
+      <li><a href="https://www.youtube.com/c/ALBASynchrotron" title="Página de Youtube" class="youtube"><span class="sr-only">Youtube</span></a></li>
     </ul>
-
+  </div>
   </header>
+
 
   <main>
 
@@ -64,8 +68,8 @@
 
       <section>
 
-        <div class="headers">
-          <h2 id="latestnews">Latest news</h2>
+        <div class="color1">
+          <h2 id="latestnews" class="internalheader">Latest news</h2>
         </div>
 
         <div class="gridart">
@@ -79,11 +83,13 @@
 
             <h3>ALBA initiates its upgrade process</h3>
 
+            <span class="underline"></span>
+
             <p>The ALBA Synchrotron has been given the green light to start working on the ALBA II project, an ambitious program that will transform ALBA into a 4th generation synchrotron facility upgrading the accelerator and other
               components and
               building new beamlines.</p>
 
-            <p id="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-initiates-its-upgrade-process-to-become-a-4th-generation-facility" rel="noopener noreferrer" target="_blank">More info</a></p>
+            <p class="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-initiates-its-upgrade-process-to-become-a-4th-generation-facility" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -95,12 +101,14 @@
 
             <h3>A step forward in the collaboration with portugal</h3>
 
+            <span class="underline"></span>
+
             <p>The 17th of December, ALBA organized together with <abbr title="Fundação para a Ciência e a Tecnologia">FCT</abbr> Portugal an online workshop with approximately 100 participants. ALBA presented the Portuguese community
               of synchrotron
               users the features and status of the facility. In addition, it also promoted the interaction between Portuguese, Spanish research groups and ALBA scientists to start developing collaborations. In 2021, ALBA will host four postdoctoral
               positions within this Iberian collaboration which will be based at ALBA premises.</p>
 
-            <p id="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-synchrotron-fct-joint-online-meeting" rel="noopener noreferrer" target="_blank">More info</a></p>
+            <p class="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-synchrotron-fct-joint-online-meeting" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -112,11 +120,13 @@
 
             <h3><abbr title="Analytical Research Infrastructures in Europe">ARIE</abbr> statement about the founding needs of <abbr title="Research Infrastructures">RIs</abbr> in the next european program</h3>
 
+            <span class="underline"></span>
+
             <p>The Board of the Analytical Research Infrastructures in Europe (ARIE) wish to raise attention to the funding needs of Research Infrastructures (RIs) in the next Horizon Europe (HE) program, and appeal for a reassignment
               of part of the
               funds to programs dedicated to Research Infrastructures. </p>
 
-            <p id="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-initiates-its-upgrade-process-to-become-a-4th-generation-facility" rel="noopener noreferrer" target="_blank">More info</a></p>
+            <p class="morebutton"><a href="https://www.albasynchrotron.es/en/media/news/alba-initiates-its-upgrade-process-to-become-a-4th-generation-facility" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
         </div>
@@ -124,8 +134,8 @@
 
       <section>
 
-        <div class="headers">
-          <h2 id="sciencehighlights">SCIENCE HIGHLIGHTS</h2>
+        <div class="color2">
+          <h2 id="sciencehighlights" class="internalheader">SCIENCE HIGHLIGHTS</h2>
         </div>
 
         <div class="gridart">
@@ -138,9 +148,15 @@
 
             <h3>The african fly of death migth alse help save lives</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>For the first time, scientists recreated in the lab the molecule that allows the tsetse fly to feed on blood. It’s a powerful yet small anticoagulant with a unique and strong binding to thrombin, the key enzyme of the coagulation
               pathway.
             </p>
+
+            <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More Info</a></p>
 
           </article>
 
@@ -152,9 +168,16 @@
 
             <h3>Towards more efficient organic solar cells</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>A new research presents for the first time an experimental methodology based on nanocalorimetry that allows quantifying the degree of intermixing of solar cells, a fundamental knowledge for the design of more efficient and stable
               devices.
             </p>
+
+            <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More info</a></p>
+
 
           </article>
 
@@ -166,8 +189,14 @@
 
             <h3>Identified the role of <abbr title="cytosolic chaperonin">CCT</abbr> protein in the control of inmune synapse formation</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>The <abbr title="cytosolic chaperonin">CCT</abbr> protein, a cytosolic chaperonin, takes part in the reorganization of the cellular skeleton involved in the immune synapse. This interaction process between lymphocytes and
               antigen-presenting cells is necessary for the activation of lymphocytes and determines the immune response intensity. </p>
+
+              <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -179,7 +208,13 @@
 
             <h3>A new material suitable ofr heat-assisted magnetic recording</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>A new highly-anisotropic Rh-based Heusler compound has been reported as an ideal candidate for high-density magnetic recording media through fast heat-assisted writing technology.</p>
+
+            <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -191,7 +226,13 @@
 
             <h3>New synthesis procedure to optimize the catalytic performance of platinum based materials</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>The catalyst showed an initial propane conversion of ~20% and after 70 h the propane conversion decreased very slowly to ~17%, demonstrating the outstanding performance of this new catalyst.</p>
+
+            <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -203,7 +244,13 @@
 
             <h3>Experimental identification of the nature and magnitude of topological charges in thin films</h3>
 
+            <span class="underline"></span>
+
+            <p class="ref">BL13-XALOC</p>
+
             <p>A group of scientists has been able to identify and measure for the first time the magnitudes of topological charges inside a thin ferromagnetic film, the most commonly used morphology in nanomagnetic devices.</p>
+
+            <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/alba-inicia-el-proceso-de-renovacion-de-sus-instalaciones-para-dar-el-salto-a-la-4a-generacion" rel="noopener noreferrer" target="_blank">More info</a></p>
 
           </article>
 
@@ -212,12 +259,34 @@
       </section>
 
       <section>
-        <div class="headers">
-          <h2 id="industryandprojects">Industry & projects</h2>
+        <div class="color3">
+          <h2 id="industryandprojects" class="internalheader">Industry & projects</h2>
         </div>
 
         <div class="gridart">
 
+          <article class="articles">
+
+            <figure>
+              <a href="#"><img src="styles/images/TAMATA_Webinar.jpg" alt="screenshoot of an online video player" class="imageart"></a>
+            </figure>
+
+            <h3>The industrial office organized a webinar for <abbr title="Small and medium-sized enterprises">SMEs</abbr></h3>
+
+            <p>Last 17th December, ALBA organized a webinar about how to use the CALIPSOplus TAmaTA project for performing experimental essays at ALBA.</p>
+
+          </article>
+          <article class="articles">
+
+            <figure>
+              <a href="#"><img src="styles/images/TAMATA_Webinar.jpg" alt="screenshoot of an online video player" class="imageart"></a>
+            </figure>
+
+            <h3>The industrial office organized a webinar for <abbr title="Small and medium-sized enterprises">SMEs</abbr></h3>
+
+            <p>Last 17th December, ALBA organized a webinar about how to use the CALIPSOplus TAmaTA project for performing experimental essays at ALBA.</p>
+
+          </article>
           <article class="articles">
 
             <figure>
@@ -234,37 +303,73 @@
 
       <section>
 
-        <div class="headers">
-          <h2 id="people">People</h2>
+        <div class="color4">
+          <h2 id="people" class="internalheader">People</h2>
         </div>
 
-        <article class="articles">
+          <div class="table_container">
 
-          <h3>Placeholder</h3>
+          <table class="table2">
 
-          <p>Alberto López</p>
-          <p>Controls (Computing division)</p>
-          <p>Andrea González</p>
-          <p>Student internship in Transversal section (Engineering division)</p>
+            <tbody>
+              <tr>
 
-        </article>
+                <td class="colorTabla4"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla4">Alberto López</td>
+                <td class="colorTabla4">Controls (Computing division)</td>
 
+                <td class="colorTabla5"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla5">Andrea González</td>
+                <td class="colorTabla5">Student internship in Transversal section (Engineering division)</td>
+
+                <td class="colorTabla4"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla4">Alberto López</td>
+                <td class="colorTabla4">Controls (Computing division)</td>
+
+              </tr>
+              <tr>
+
+                <td class="colorTabla5"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla5">Alberto López</td>
+                <td class="colorTabla5">Controls (Computing division)</td>
+
+                <td class="colorTabla4"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla4">Andrea González</td>
+                <td class="colorTabla4">Student internship in Transversal section (Engineering division)</td>
+
+                <td class="colorTabla5"><img src="styles/images/beyonce.png" class="imgtabla"></td>
+                <td class="colorTabla5">Alberto López</td>
+                <td class="colorTabla5">Controls (Computing division)</td>
+
+              </tr>
+
+            </tbody>
+          </table>
+</div>
       </section>
 
       <section>
 
-        <div class="headers">
-          <h2 id="management">Management board news</h2>
+        <div class="color5">
+          <h2 id="management" class="internalheader">Management board news</h2>
         </div>
 
-        <article class="articles">
+        <article class="articles2">
 
           <h3>Very positive feedback from the Rector Council</h3>
+
+          <span class="underline"></span>
 
           <p>On the 16th of December, the Rector Council meeting of ALBA was held. During the meeting, the ALBA II project was presented and approved to start its design. The members of the Rector Council highlighted the great performance of ALBA in
             2020, being able to perform the 98% of the scheduled experiments despite the complicated circumstances imposed by covid-19 measurements.</p>
 
+        </article>
+
+        <article class="articles2">
+
           <h3>ALBA presented its industrial capabilities to <abbr title="Centre for the Development of Industrial Technology">CDTI</abbr></h3>
+
+          <span class="underline"></span>
 
           <p>The Centre for the Development of Industrial Technology (<abbr title="Centre for the Development of Industrial Technology">CDTI</abbr>) hosted a meeting at the end of November where ALBA summarised its activity with industrial users and
             available services.</p>
@@ -275,89 +380,131 @@
 
       <section>
 
-        <div class="headers">
-          <h2 id="events">Events</h2>
+        <div class="color6">
+          <h2 id="events" class="internalheader">Events</h2>
         </div>
 
-        <article class="articles">
+        <div class="flexbox1">
+
+        <article class="articles2">
 
           <figure>
-            <a href="#"><img src="styles/images/Caterina.png" alt="screenshoot of webpage" class="imageart"></a>
+            <a href="https://mon.uvic.cat/tlc/caterina-biscari-18-11-20-webinar-el-sincrotro-alba-com-manipular-els-electrons-per-servir-a-la-societat/"><img src="styles/images/Caterina.png" alt="screenshoot of a webpage" class="agendaimg"></a>
           </figure>
+          <span class="underline2"></span>
 
-          <p>You can now watch the conference given by Caterina Biscari on 18th November for the <span lang="ca">Universitat de Vic "El sincrotró ALBA: com manipular els electrons per servir a la societat"</span>.</p>
+          <h3><time datetime="2020-11-18" class="color9">18/11/2020</time></h3>
+          <h3><time class="color10">19:50 Hr.</time></h3>
+          <h4 class="color11">Webinar: Caterina Biscari</h4>
+
+          <p><span lang="ca">“El sincrotró ALBA: com manipular els electrons per servir a la societat”</span></p>
+
+          <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/ceramica-italiana-estudiada-en-profundidad-con-la-luz-de-alba" rel="noopener noreferrer" target="_blank">Ver más</a></p>
 
         </article>
+
+        <article class="articles2">
+
+          <figure>
+            <a href="https://mon.uvic.cat/tlc/caterina-biscari-18-11-20-webinar-el-sincrotro-alba-com-manipular-els-electrons-per-servir-a-la-societat/"><img src="styles/images/Caterina.png" alt="screenshoot of a webpage" class="agendaimg"></a>
+          </figure>
+
+          <span class="underline2"></span>
+
+          <h3><time datetime="2020-11-18" class="color9">18/11/2020</time></h3>
+          <h3><time class="color10">19:50 Hr.</time></h3>
+          <h4 class="color11">Webinar: Caterina Biscari</h4>
+
+          <p><span lang="ca">“El sincrotró ALBA: com manipular els electrons per servir a la societat”</span></p>
+
+          <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/ceramica-italiana-estudiada-en-profundidad-con-la-luz-de-alba" rel="noopener noreferrer" target="_blank">Ver más</a></p>
+
+        </article>
+        <article class="articles2">
+
+          <figure>
+            <a href="https://mon.uvic.cat/tlc/caterina-biscari-18-11-20-webinar-el-sincrotro-alba-com-manipular-els-electrons-per-servir-a-la-societat/"><img src="styles/images/Caterina.png" alt="screenshoot of a webpage" class="agendaimg"></a>
+          </figure>
+
+          <span class="underline2"></span>
+
+          <h3><time datetime="2020-11-18" class="color9">18/11/2020</time></h3>
+          <h3><time class="color10">19:50 Hr.</time></h3>
+          <h4 class="color11">Webinar: Caterina Biscari</h4>
+
+          <p><span lang="ca">“El sincrotró ALBA: com manipular els electrons per servir a la societat”</span></p>
+
+          <p class="morebutton"><a href="https://www.sincrotronalba.es/es/actualidad/noticias/ceramica-italiana-estudiada-en-profundidad-con-la-luz-de-alba" rel="noopener noreferrer" target="_blank">Ver más</a></p>
+
+        </article>
+
+        </div>
 
       </section>
 
       <section>
 
-        <div class="headers">
-          <h2 id="agenda">In the media</h2>
+        <div class="color7">
+          <h2 id="agenda" class="internalheader">In the media</h2>
         </div>
 
-        <article class="articles">
+        <div class="table_container">
 
-          <table class="tablanoticias">
-            <caption>Noticias</caption>
+          <table class="table1">
             <tbody>
               <tr>
-                <th scope="columns">Fecha</th>
-                <th scope="columns">Titular</th>
-                <th scope="columns">Enlace</th>
+                <th>Fecha</th>
+                <th>Titular</th>
+                <th>Medio</th>
               </tr>
               <tr>
-                <td><time datetime="2020-12-04">04/12/20</time></th>
-                <td>Diario Médico</td>
-                <td><a href="https://www.diariomedico.com/medicina/inmunologia/describen-un-nuevo-detalle-en-el-proceso-de-interaccion-entre-linfocitos-t-y-celulas-presentadoras-de-antigenos.html">Describen un nuevo detalle en el proceso de
+                <td class="colorTabla2"><time datetime="2020-12-04">04/12/20</time></td>
+                <td class="colorTabla2"><a href="https://www.diariomedico.com/medicina/inmunologia/describen-un-nuevo-detalle-en-el-proceso-de-interaccion-entre-linfocitos-t-y-celulas-presentadoras-de-antigenos.html">Describen un nuevo detalle en el proceso de
                     interacción entre linfocitos T y células presentadoras de antígenos</a></td>
+                <td class="colorTabla2">Diario Médico</td>
               </tr>
               <tr>
-                <td><time datetime="2020-12-02">02/12/2020</time></th>
-                <td>Agencia EFE</td>
-                <td><a href="https://www.efe.com/efe/espana/destacada/logran-recrear-la-molecula-que-usa-mosca-tse-para-no-coagule-sangre/10011-4409206">Logran recrear la molécula que
+                <td class="colorTabla3"><time datetime="2020-12-02">02/12/2020</time></td>
+                <td class="colorTabla3"><a href="https://www.efe.com/efe/espana/destacada/logran-recrear-la-molecula-que-usa-mosca-tse-para-no-coagule-sangre/10011-4409206">Logran recrear la molécula que
                     usa mosca tsé-tsé para que no coagule sangre</a></td>
+                <td class="colorTabla3">Agencia EFE</td>
               </tr>
               <tr>
-                <td><time datetime="2020-11-25">25/11/2020</time></th>
-                <td>Europa directo</td>
-                <td><a href="https://www.europadirecto.com/tecnologia/25/11/2020/luz-sincrotron-para-luchar-contra-el-coronavirus/">Luz sincrotrón para luchar contra el
+                <td class="colorTabla2"><time datetime="2020-11-25">25/11/2020</time></td>
+                <td class="colorTabla2"><a href="https://www.europadirecto.com/tecnologia/25/11/2020/luz-sincrotron-para-luchar-contra-el-coronavirus/">Luz sincrotrón para luchar contra el
                     coronavirus</a>
+                <td class="colorTabla2">Europa directo</td>
               </tr>
               <tr>
-                <td><time datetime="2020-11-19">19/11/2020</time></th>
-                <td>Catalunya radio</td>
-                <td><a href="https://www.ccma.cat/catradio/alacarta/el-mati-de-catalunya-radio/ni-la-ciencia-es-tan-grisa-ni-els-lgtbiq-estem-de-gresca-24-h-i-aixo-per-a-que-serveix/audio/1085003/"><span lang="ca">El matí de Catalunya Ràdio: Per a
-                      què
-                      serveix el sincrotró Alba? - Entrevista a Judith Juanhuix</span></a></td>
+                <td class="colorTabla3"><time datetime="2020-11-19">19/11/2020</time></td>
+                <td class="colorTabla3"><a href="https://www.ccma.cat/catradio/alacarta/el-mati-de-catalunya-radio/ni-la-ciencia-es-tan-grisa-ni-els-lgtbiq-estem-de-gresca-24-h-i-aixo-per-a-que-serveix/audio/1085003/"><span lang="ca">El matí de Catalunya Ràdio: Per a
+                      què serveix el sincrotró Alba? - Entrevista a Judith Juanhuix</span></a></td>
+                <td class="colorTabla3">Catalunya radio</td>
               </tr>
               <tr>
-                <td><time datetime="2020-11-19">19/11/2020</time></th>
-                <td>3/24</td>
-                <td><a href="https://www.ccma.cat/324/tremosa-anuncia-un-fons-dinversio-publico-privat-per-impulsar-projectes-dinvestigacio/noticia/3060209/"><span lang="ca">Tremosa anuncia un fons
+                <td class="colorTabla2"><time datetime="2020-11-19">19/11/2020</time></td>
+                <td class="colorTabla2"><a href="https://www.ccma.cat/324/tremosa-anuncia-un-fons-dinversio-publico-privat-per-impulsar-projectes-dinvestigacio/noticia/3060209/"><span lang="ca">Tremosa anuncia un fons
                       d'inversió público-privat per impulsar projectes d'investigació</span></a>
+                <td class="colorTabla2">3/24</td>
               </tr>
               <tr>
-                <td><time datetime="2020-12-17">17/12/2020</time></th>
-                <td>La vanguardia</td>
-                <td><a href="https://www.lavanguardia.com/vida/20201217/6128347/sincrotron-alba-inicia-reforma-dar-salto-cuarta-generacion.html">El Sincrotrón ALBA inicia la
+                <td class="colorTabla3"><time datetime="2020-12-17">17/12/2020</time></td>
+                <td class="colorTabla3"><a href="https://www.lavanguardia.com/vida/20201217/6128347/sincrotron-alba-inicia-reforma-dar-salto-cuarta-generacion.html">El Sincrotrón ALBA inicia la
                     reforma para dar el salto a la cuarta generación</a>
+                <td class="colorTabla3">La vanguardia</td>
               </tr>
             </tbody>
           </table>
-
-        </article>
-
+  </div>
       </section>
 
       <section>
 
-        <div class="headers">
-          <h2>Happy Holidays!</h2>
+        <div class="color8">
+          <h2 class="internalheader">Happy Holidays!</h2>
         </div>
 
-        <article class="articles">
+        <article class="articles2">
 
           <figure>
             <a href="#"><img src="styles/images/Christmas-_600x300_px.png" alt="image of a crhistmas tree" class="imageart"></a>
@@ -378,19 +525,19 @@
 
       <div class="flexfooter">
 
-        <ul id="rrss" class="footer2">
-          <li><a href="https://twitter.com/ALBAsynchrotron" title="Página de Twitter" id="twitter"><span class="sr-only">Twitter</span></a></li>
-          <li><a href="https://www.instagram.com/alba_synchrotron/" title="Página de Instagram" id="instagram"> <span class="sr-only">Instagram</span></a></li>
-          <li><a href="https://www.linkedin.com/company/albasynchrotron/" title="Página de LinkedIn" id="linkedin"> <span class="sr-only">LinkedIn</span></a></li>
-          <li><a href="https://www.facebook.com/albasynchrotron/" title="Página de Facebook" id="facebook"><span class="sr-only">Facebook</span></a></li>
-          <li><a href="https://www.youtube.com/c/ALBASynchrotron" title="Página de Youtube" id="youtube"><span class="sr-only">Youtube</span></a></li>
-          <li><a href="https://www.flickr.com/photos/albasynchrotron" title="Página de Flickr" id="flickr"><span class="sr-only">Flickr</span></a></li>
+        <ul class="rrss footer2">
+          <li><a href="https://twitter.com/ALBAsynchrotron" title="Página de Twitter" class="twitter"><span class="sr-only">Twitter</span></a></li>
+          <li><a href="https://www.instagram.com/alba_synchrotron/" title="Página de Instagram" class="instagram"> <span class="sr-only">Instagram</span></a></li>
+          <li><a href="https://www.linkedin.com/company/albasynchrotron/" title="Página de LinkedIn" class="linkedin"> <span class="sr-only">LinkedIn</span></a></li>
+          <li><a href="https://www.facebook.com/albasynchrotron/" title="Página de Facebook" class="facebook"><span class="sr-only">Facebook</span></a></li>
+          <li><a href="https://www.youtube.com/c/ALBASynchrotron" title="Página de Youtube" class="youtube"><span class="sr-only">Youtube</span></a></li>
+          <li><a href="https://www.flickr.com/photos/albasynchrotron" title="Página de Flickr" class="flickr"><span class="sr-only">Flickr</span></a></li>
         </ul>
 
         <div class="footerbutton">
 
-          <p id="morebutton"><a href="mailto:communications@cells.es">Contact</a></p>
-          <p id="morebutton"><a href="mailto:communications@cells.es">Unsubscribe</a></p>
+          <p class="morebutton"><a href="mailto:communications@cells.es">Contact</a></p>
+          <p class="morebutton"><a href="mailto:communications@cells.es">Unsubscribe</a></p>
 
 
         </div>
@@ -401,9 +548,7 @@
       <div class="footertext">
 
         <p>You are receiving this email because of your relationship with <abbr title="Consortium for the Construction, Explotaition and Equipment of Synchrotron Light Laboratory">CELLS</abbr> (Consortium for the Construction,
-          Explotaition and
-          Equipment
-          of Synchrotron Light Laboratory). If you do not wish to receive any more emails, you can unsubscribe here.</p>
+          Explotaition and Equipment of Synchrotron Light Laboratory). If you do not wish to receive any more emails, you can unsubscribe here.</p>
 
         <p>© 2020 ALBA SYNCHROTRON</p>
 
